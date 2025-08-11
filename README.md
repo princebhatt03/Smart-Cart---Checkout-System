@@ -1,6 +1,5 @@
 # 🛒 SmartCart – Next-Gen Retail Checkout Solution
 
-![SmartCart Logo](https://img.icons8.com/color/96/000000/shopping-cart.png)
 [![Made with Node.js](https://img.shields.io/badge/Made%20with-Node.js-green?style=for-the-badge&logo=node.js)](https://nodejs.org/)
 [![Made with React](https://img.shields.io/badge/Frontend-React-blue?style=for-the-badge&logo=react)](https://react.dev/)
 [![Database-MongoDB](https://img.shields.io/badge/Database-MongoDB-brightgreen?style=for-the-badge&logo=mongodb)](https://www.mongodb.com/)
