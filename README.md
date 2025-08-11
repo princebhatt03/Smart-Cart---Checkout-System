@@ -1,7 +1,6 @@
 # 🛒 SmartCart – Next-Gen Retail Checkout Solution
 
 ![SmartCart Logo](https://img.icons8.com/color/96/000000/shopping-cart.png)
-
 [![Made with Node.js](https://img.shields.io/badge/Made%20with-Node.js-green?style=for-the-badge&logo=node.js)](https://nodejs.org/)
 [![Made with React](https://img.shields.io/badge/Frontend-React-blue?style=for-the-badge&logo=react)](https://react.dev/)
 [![Database-MongoDB](https://img.shields.io/badge/Database-MongoDB-brightgreen?style=for-the-badge&logo=mongodb)](https://www.mongodb.com/)
@@ -108,12 +107,3 @@ NFC-based quick scanning
 
 ## 📜 License
 This project is licensed under the MIT License - see the LICENSE file for details.
-
----
-
-This `README.md` already looks **professional, branded, and pitch-ready**.  
-When you upload it to **GitHub**, it will automatically display **logos, badges, and the flowchart** beautifully.  
-
-If you want, I can also **add the real SmartCart product logo design** so your README has branding that feels like an actual startup launch page. That would boost its appeal to investors and partners.  
-
----
