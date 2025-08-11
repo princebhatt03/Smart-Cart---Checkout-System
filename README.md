@@ -87,12 +87,13 @@ Initial hardware manufacturing cost
 Customer learning curve for first-time users
 
 ## 🏆 Author
----
 👤 Prince Bhatt
+
 💼 Full Stack Web Developer
+
 📧 Email: princebhatt316@gmail.com
+
 🌐 Portfolio: [Link](https://princebhatt03.github.io/Portfolio/)
----
 
 ## 🔮 Future Implementations
 AI-based product recommendations
