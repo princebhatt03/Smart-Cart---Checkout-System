@@ -14,9 +14,9 @@ const server = http.createServer(app);
 
 // Allow multiple origins (local, production, preview)
 const allowedOrigins = [
-  process.env.FRONTEND_URL || 'http://localhost:5173', // Main frontend
-  'http://localhost:3000', 
-  /\.netlify\.app$/, 
+  process.env.FRONTEND_URL || 'http://localhost:5173',
+  'http://localhost:3000',
+  /\.netlify\.app$/,
 ];
 
 // CORS middleware
