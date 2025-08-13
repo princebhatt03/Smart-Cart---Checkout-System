@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import FrontPage from './Pages/FrontPage';
 import MallPage from './Pages/MallPage';
+import ErrorPage from "./Pages/ErrorPage"; 
 import UserRegister from './Pages/UserRegister';
 
 function App() {
@@ -18,6 +19,10 @@ function App() {
         <Route
           path="/mall/:mallName"
           element={<MallPage />}
+        />
+        <Route
+          path="*"
+          element={<ErrorPage />}
         />
       </Routes>
     </Router>

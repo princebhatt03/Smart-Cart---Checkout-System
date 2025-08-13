@@ -3,7 +3,6 @@ import Header from '../Components/Header';
 import { useNavigate } from 'react-router-dom';
 import { FaShoppingCart } from 'react-icons/fa';
 import { toast } from 'react-toastify';
-import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { showSuccessToast, showErrorToast } from '../utils/toastConfig';
 import axios from 'axios';
@@ -49,7 +48,9 @@ const FrontPage = () => {
   }, []);
 
   const handleSelectMall = mallName => {
-    navigate(`/mall/${mallName.replace(/\s+/g, '-').toLowerCase()}`);
+    // Convert name to slug for URL
+    const slug = mallName.replace(/\s+/g, '-').toLowerCase();
+    navigate(`/mall/${slug}`);
   };
 
   const handleLeave = async () => {
@@ -67,7 +68,6 @@ const FrontPage = () => {
       );
 
       localStorage.removeItem('tap2cartUser');
-      // toast.success('Cart deactivated successfully. See you next time!');
       showSuccessToast(`Cart deactivated successfully. See you next time!`);
       navigate('/');
     } catch (error) {
@@ -80,7 +80,7 @@ const FrontPage = () => {
     <>
       <Header />
       <div
-        className="min-h-screen top-5 relative flex flex-col items-center"
+        className="min-h-screen relative flex flex-col items-center pt-16"
         style={{ backgroundColor: '#FFF8E8' }}>
         {/* Hero Section */}
         <section
