@@ -4,7 +4,6 @@ const cors = require('cors');
 const path = require('path');
 const http = require('http');
 const connectToDb = require('./db/db');
-const mongoose = require('mongoose');
 const userRoutes = require('./routes/user.routes');
 
 // Connect to DB
@@ -13,15 +12,27 @@ connectToDb();
 const app = express();
 const server = http.createServer(app);
 
-// CORS configuration
-const allowedOrigins = [process.env.FRONTEND_URL || 'http://localhost:5173'];
+// Allow multiple origins (local, production, preview)
+const allowedOrigins = [
+  process.env.FRONTEND_URL || 'http://localhost:5173', // Main frontend
+  'http://localhost:3000', 
+  /\.netlify\.app$/, 
+];
+
+// CORS middleware
 app.use(
   cors({
     origin: function (origin, callback) {
-      if (!origin || allowedOrigins.includes(origin)) {
+      // No origin → requests like Postman
+      if (!origin) return callback(null, true);
+      if (
+        allowedOrigins.some(o =>
+          o instanceof RegExp ? o.test(origin) : o === origin
+        )
+      ) {
         callback(null, true);
       } else {
-        callback(new Error('Not allowed by CORS'));
+        callback(new Error(`Not allowed by CORS: ${origin}`));
       }
     },
     credentials: true,
@@ -31,7 +42,7 @@ app.use(
 // Middleware
 app.use(express.json());
 
+// Routes
 app.use('/api', userRoutes);
-app.use('/api/users', userRoutes);
 
 module.exports = { app, server };
