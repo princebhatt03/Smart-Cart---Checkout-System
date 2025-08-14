@@ -1,0 +1,260 @@
+[
+  {
+    "name": "Elegant Pink Jacket",
+    "price": 600,
+    "image": "/uploads/img1.jpg",
+    "category": "women",
+    "tag": "new"
+  },
+  {
+    "name": "Rainbow Summer Dress",
+    "price": 750,
+    "image": "/uploads/img2.jpg",
+    "category": "women",
+    "tag": "hot"
+  },
+  {
+    "name": "Geometric Orange Dress",
+    "price": 999,
+    "image": "/uploads/img3.jpg",
+    "category": "women",
+    "tag": "sale"
+  },
+  {
+    "name": "Floral Fit & Flare Dress",
+    "price": 800,
+    "image": "/uploads/img4.jpg",
+    "category": "women",
+    "tag": "sale"
+  },
+  {
+    "name": "Men’s Casual Shirt",
+    "price": 550,
+    "image": "/uploads/img5.jpg",
+    "category": "men",
+    "tag": "hot"
+  },
+  {
+    "name": "Men’s Denim Jacket",
+    "price": 1200,
+    "image": "/uploads/img6.jpg",
+    "category": "men",
+    "tag": "new"
+  },
+  {
+    "name": "Men’s Slim Fit Jeans",
+    "price": 1000,
+    "image": "/uploads/img7.jpg",
+    "category": "men",
+    "tag": "sale"
+  },
+  {
+    "name": "Men’s Formal Blazer",
+    "price": 2400,
+    "image": "/uploads/img8.jpg",
+    "category": "men"
+  },
+  {
+    "name": "Crop Tops",
+    "price": 300,
+    "image": "/uploads/img8.jpg",
+    "category": "women",
+    "tag": "new"
+  },
+  {
+    "name": "Moisturizing Cream",
+    "price": 300,
+    "image": "/uploads/img9.jpg",
+    "category": "cosmetics",
+    "tag": "new"
+  },
+  {
+    "name": "Matte Lipstick Set",
+    "price": 650,
+    "image": "/uploads/img10.jpg",
+    "category": "cosmetics"
+  },
+  {
+    "name": "Face Powder",
+    "price": 400,
+    "image": "/uploads/img11.jpg",
+    "category": "cosmetics",
+    "tag": "hot"
+  },
+  {
+    "name": "Makeup",
+    "price": 250,
+    "image": "/uploads/img12.jpg",
+    "category": "cosmetics",
+    "tag": "sale"
+  },
+  {
+    "name": "Cosmetic Brush Set",
+    "price": 600,
+    "image": "/uploads/img13.jpg",
+    "category": "cosmetics"
+  },
+  {
+    "name": "Indian Team Jersey",
+    "price": 1500,
+    "image": "/uploads/img14.jpg",
+    "category": "cosmetics"
+  },
+  {
+    "name": "Indian Team Jersey World Cup Edition",
+    "price": 600,
+    "image": "/uploads/img15.jpg",
+    "category": "cosmetics"
+  },
+  {
+    "name": "Basmati Rice 5kg",
+    "price": 450,
+    "image": "/uploads/img16.jpg",
+    "category": "groceries",
+    "tag": "sale"
+  },
+  {
+    "name": "Wheat Flour 5kg",
+    "price": 320,
+    "image": "/uploads/img17.jpg",
+    "category": "groceries"
+  },
+  {
+    "name": "Refined Sugar 2kg",
+    "price": 150,
+    "image": "/uploads/img18.jpg",
+    "category": "groceries",
+    "tag": "hot"
+  },
+  {
+    "name": "Cooking Oil 1L",
+    "price": 160,
+    "image": "/uploads/img19.jpg",
+    "category": "groceries",
+    "tag": "new"
+  },
+  {
+    "name": "Organic Green Tea 250g",
+    "price": 220,
+    "image": "/uploads/img20.jpg",
+    "category": "groceries"
+  },
+  {
+    "name": "Coffee Powder 500g",
+    "price": 300,
+    "image": "/uploads/img21.jpg",
+    "category": "groceries",
+    "tag": "hot"
+  },
+  {
+    "name": "Fresh Milk 1L",
+    "price": 60,
+    "image": "/uploads/img22.jpg",
+    "category": "groceries"
+  },
+  {
+    "name": "Cheddar Cheese 200g",
+    "price": 150,
+    "image": "/uploads/img23.jpg",
+    "category": "groceries"
+  },
+  {
+    "name": "Brown Bread",
+    "price": 40,
+    "image": "/uploads/img24.jpg",
+    "category": "groceries"
+  },
+  {
+    "name": "Butter 500g",
+    "price": 220,
+    "image": "/uploads/img25.jpg",
+    "category": "groceries"
+  },
+  {
+    "name": "Eggs Pack of 12",
+    "price": 70,
+    "image": "/uploads/img26.jpg",
+    "category": "groceries",
+    "tag": "new"
+  },
+  {
+    "name": "Tomato Ketchup 1L",
+    "price": 120,
+    "image": "/uploads/img27.jpg",
+    "category": "groceries"
+  },
+  {
+    "name": "Chili Powder 500g",
+    "price": 180,
+    "image": "/uploads/img28.jpg",
+    "category": "groceries"
+  },
+  {
+    "name": "Turmeric Powder 500g",
+    "price": 160,
+    "image": "/uploads/img29.jpg",
+    "category": "groceries",
+    "tag": "sale"
+  },
+  {
+    "name": "Salt 1kg",
+    "price": 20,
+    "image": "/uploads/img30.jpg",
+    "category": "groceries"
+  },
+  {
+    "name": "Detergent Powder 2kg",
+    "price": 180,
+    "image": "/uploads/img31.jpg",
+    "category": "groceries"
+  },
+  {
+    "name": "Dishwashing Liquid 500ml",
+    "price": 60,
+    "image": "/uploads/img32.jpg",
+    "category": "groceries"
+  },
+  {
+    "name": "Mineral Water 1L",
+    "price": 25,
+    "image": "/uploads/img33.jpg",
+    "category": "groceries"
+  },
+  {
+    "name": "Apple 1kg",
+    "price": 150,
+    "image": "/uploads/img34.jpg",
+    "category": "groceries",
+    "tag": "hot"
+  },
+  {
+    "name": "Banana 1 Dozen",
+    "price": 60,
+    "image": "/uploads/img35.jpg",
+    "category": "groceries"
+  },
+  {
+    "name": "Potato 1kg",
+    "price": 40,
+    "image": "/uploads/img36.jpg",
+    "category": "groceries"
+  },
+  {
+    "name": "Onion 1kg",
+    "price": 50,
+    "image": "/uploads/img37.jpg",
+    "category": "groceries"
+  },
+  {
+    "name": "Tomato 1kg",
+    "price": 55,
+    "image": "/uploads/img38.jpg",
+    "category": "groceries"
+  },
+  {
+    "name": "Fresh Coriander Bunch",
+    "price": 20,
+    "image": "/uploads/img39.jpg",
+    "category": "groceries"
+  }
+]

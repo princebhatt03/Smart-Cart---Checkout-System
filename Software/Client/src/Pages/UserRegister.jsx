@@ -4,7 +4,6 @@ import axios from 'axios';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { showSuccessToast, showErrorToast } from '../utils/toastConfig';
-import { toast } from 'react-toastify';
 
 const Register = () => {
   const navigate = useNavigate();
@@ -45,21 +44,24 @@ const Register = () => {
     setLoading(true);
 
     try {
-      const res = await axios.post(
-        `${
-          import.meta.env.VITE_API_URL || 'http://localhost:3000'
-        }/api/register`,
-        formData,
-        { withCredentials: true }
-      );
+      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+
+      const res = await axios.post(`${apiUrl}/api/register`, formData, {
+        withCredentials: true,
+      });
 
       const { user } = res.data;
+
+      if (!user || !user._id) {
+        throw new Error('Invalid user data returned from server');
+      }
 
       // Generate random cart number between 101 and 130
       const cartNum = Math.floor(Math.random() * (130 - 101 + 1)) + 101;
 
-      // Save user & cart number to localStorage
+      // Save user, userId, and cart number to localStorage
       localStorage.setItem('tap2cartUser', JSON.stringify(user));
+      localStorage.setItem('tap2cartUserId', user._id);
       localStorage.setItem('tap2cartNumber', cartNum);
 
       // Success toast
@@ -72,6 +74,7 @@ const Register = () => {
     } catch (error) {
       const errMsg =
         error.response?.data?.message ||
+        error.message ||
         'Something went wrong. Please try again.';
       showErrorToast(errMsg);
     } finally {
