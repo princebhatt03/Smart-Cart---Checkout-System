@@ -2,9 +2,11 @@ import React, { useState, useEffect } from 'react';
 import Header from '../Components/Header';
 import { useNavigate } from 'react-router-dom';
 import { FaShoppingCart } from 'react-icons/fa';
-import { toast } from 'react-toastify';
+// import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { showSuccessToast, showErrorToast } from '../utils/toastConfig';
+// import { showSuccessToast, showErrorToast } from '../utils/toastConfig';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios';
 
 const malls = [
@@ -68,11 +70,11 @@ const FrontPage = () => {
       );
 
       localStorage.removeItem('tap2cartUser');
-      showSuccessToast(`Cart deactivated successfully. See you next time!`);
+      toast.success(`Cart deactivated successfully. See you next time!`);
       navigate('/');
     } catch (error) {
       console.error(error);
-      showErrorToast('Failed to deactivate cart.');
+      toast.error('Failed to deactivate cart.');
     }
   };
 

@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import { ToastContainer } from 'react-toastify';
+// import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { showSuccessToast, showErrorToast } from '../utils/toastConfig';
+// import { showSuccessToast, showErrorToast } from '../utils/toastConfig';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Register = () => {
   const navigate = useNavigate();
@@ -65,7 +67,7 @@ const Register = () => {
       localStorage.setItem('tap2cartNumber', cartNum);
 
       // Success toast
-      showSuccessToast(
+      toast.success(
         `Registered Successfully! Welcome, ${user.name} (Cart Number: ${cartNum})`
       );
 
@@ -76,7 +78,7 @@ const Register = () => {
         error.response?.data?.message ||
         error.message ||
         'Something went wrong. Please try again.';
-      showErrorToast(errMsg);
+      toast.error(errMsg);
     } finally {
       setLoading(false);
     }

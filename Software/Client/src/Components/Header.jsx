@@ -20,7 +20,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-[#DEE8CE] text-white p-4 gap-4 flex justify-between items-center z-50 shadow-md shadow-[0_4px_15px_rgba(0,0,0,0.3)] ">
+    <header className="fixed top-0 left-0 w-full bg-[#DEE8CE] text-white p-4 gap-4 flex justify-between items-center z-50 shadow-[0_4px_15px_rgba(0,0,0,0.3)] ">
       <img
         src={logo}
         alt="Company Logo"
