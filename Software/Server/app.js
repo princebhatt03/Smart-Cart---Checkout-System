@@ -1,7 +1,8 @@
-require('dotenv').config();
+require('dotenv').config({
+  silent: true,
+});
 const express = require('express');
 const cors = require('cors');
-const path = require('path');
 const http = require('http');
 const connectToDb = require('./db/db');
 const userRoutes = require('./routes/user.routes');
@@ -23,7 +24,6 @@ const allowedOrigins = [
 app.use(
   cors({
     origin: function (origin, callback) {
-      // No origin → requests like Postman
       if (!origin) return callback(null, true);
       if (
         allowedOrigins.some(o =>
