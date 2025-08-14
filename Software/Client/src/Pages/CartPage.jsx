@@ -118,8 +118,13 @@ const CartPage = () => {
 
         <button
           onClick={() => navigate(-1)}
-          className="mt-6 px-4 py-2 bg-[#BB6653] text-white rounded hover:bg-[#a65847] transition">
+          className="mt-6 px-4 ml-14 py-2 bg-[#BB6653] text-white rounded hover:bg-[#a65847] transition">
           Back
+        </button>
+        <button
+          onClick={() => navigate('/Front-Page')}
+          className="mt-6 ml-10 mr-5 px-4 py-2 bg-[#BB6653] text-white rounded hover:bg-[#a65847] transition">
+          Back to home
         </button>
 
         <ToastContainer
