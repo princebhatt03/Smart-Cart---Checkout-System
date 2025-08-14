@@ -29,7 +29,7 @@ const CartPage = () => {
   const handleClearCart = async () => {
     try {
       await clearCart();
-      toast.info('Cart cleared successfully');
+      // toast.info('Cart cleared successfully');
     } catch (err) {
       toast.error('Failed to clear cart');
     }

@@ -77,7 +77,7 @@ export const CartProvider = ({ children }) => {
           _id: p.productId._id,
         }));
         setCart(populatedProducts);
-        toast.info('Product removed from cart');
+        // toast.info('Product removed from cart');
       }
     } catch (err) {
       console.error(err);
@@ -93,7 +93,7 @@ export const CartProvider = ({ children }) => {
       const res = await axios.post(`${VITE_API_URL}/api/cart/clear`, {
         userId,
       });
-      setCart([]); // clear frontend cart immediately
+      setCart([]);
       toast.info('Cart cleared');
     } catch (err) {
       console.error('Cart clear error:', err.response?.data || err.message);
