@@ -1,29 +1,27 @@
-require('dotenv').config({
-  silent: true,
-});
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
 const http = require('http');
 const connectToDb = require('./db/db');
+
 const userRoutes = require('./routes/user.routes');
 const productRoutes = require('./routes/product.routes');
 const cartRoutes = require('./routes/cart.routes');
+const paymentRoutes = require('./routes/payment.routes');
 
-// Connect to DB
 connectToDb();
 
 const app = express();
 const server = http.createServer(app);
 
-// Allow multiple origins (local, production, preview)
+// CORS setup
 const allowedOrigins = [
   process.env.FRONTEND_URL || 'http://localhost:5173',
   'http://localhost:3000',
   /\.netlify\.app$/,
 ];
 
-// CORS middleware
 app.use(
   cors({
     origin: function (origin, callback) {
@@ -42,7 +40,7 @@ app.use(
   })
 );
 
-// Middleware
+// Parse JSON body
 app.use(express.json());
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
@@ -50,5 +48,6 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 app.use('/api', userRoutes);
 app.use('/api/products', productRoutes);
 app.use('/api/cart', cartRoutes);
+app.use('/api/payment', paymentRoutes);
 
 module.exports = { app, server };

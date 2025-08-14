@@ -22,14 +22,10 @@ router.post('/add', async (req, res) => {
       }
       await cart.save();
     } else {
-      cart = new Cart({
-        userId,
-        products: [{ productId, quantity: 1 }],
-      });
+      cart = new Cart({ userId, products: [{ productId, quantity: 1 }] });
       await cart.save();
     }
 
-    // Populate products so frontend gets name, price, image
     await cart.populate('products.productId');
     res.status(200).json(cart);
   } catch (error) {
@@ -64,7 +60,7 @@ router.post('/remove', async (req, res) => {
     );
     await cart.save();
 
-    await cart.populate('products.productId'); // ✅ populate after removal
+    await cart.populate('products.productId');
     res.json({ products: cart.products });
   } catch (err) {
     res.status(500).json({
@@ -75,16 +71,21 @@ router.post('/remove', async (req, res) => {
 });
 
 // Clear cart
+// Clear cart
 router.post('/clear', async (req, res) => {
   try {
     const { userId } = req.body;
     if (!userId) return res.status(400).json({ message: 'User ID required' });
 
-    const cart = await Cart.findOne({ userId });
-    if (!cart) return res.status(404).json({ message: 'Cart not found' });
-
-    cart.products = [];
-    await cart.save();
+    let cart = await Cart.findOne({ userId });
+    if (!cart) {
+      // Auto-create an empty cart for user
+      cart = new Cart({ userId, products: [] });
+      await cart.save();
+    } else {
+      cart.products = [];
+      await cart.save();
+    }
 
     res.json({ products: [] });
   } catch (err) {

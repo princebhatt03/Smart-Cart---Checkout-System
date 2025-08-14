@@ -4,6 +4,7 @@ import MallPage from './Pages/MallPage';
 import ErrorPage from './Pages/ErrorPage';
 import UserRegister from './Pages/UserRegister';
 import CartPage from './Pages/CartPage';
+import CheckoutPage from './Pages/Checkout';
 
 function App() {
   return (
@@ -23,6 +24,10 @@ function App() {
       <Route
         path="/cart"
         element={<CartPage />}
+      />
+      <Route
+        path="/checkout"
+        element={<CheckoutPage />}
       />
       <Route
         path="*"

@@ -96,8 +96,11 @@ export const CartProvider = ({ children }) => {
       setCart([]); // clear frontend cart immediately
       toast.info('Cart cleared');
     } catch (err) {
-      console.error(err);
-      toast.error('Failed to clear cart');
+      console.error('Cart clear error:', err.response?.data || err.message);
+
+      // If cart not found, just clear frontend cart
+      setCart([]);
+      toast.info('Cart cleared');
     }
   };
 

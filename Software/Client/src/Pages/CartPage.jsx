@@ -41,8 +41,14 @@ const CartPage = () => {
       toast.warn('Cart is empty!');
       return;
     }
-    toast.success('Proceeding to checkout...');
-    // Add your checkout logic here
+    // Navigate to checkout page and pass cart items
+    navigate('/checkout', {
+      state: {
+        cartItems: cart,
+        userName: JSON.parse(localStorage.getItem('tap2cartUser'))?.name,
+        userEmail: JSON.parse(localStorage.getItem('tap2cartUser'))?.email,
+      },
+    });
   };
 
   return (

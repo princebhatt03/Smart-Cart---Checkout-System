@@ -109,152 +109,152 @@
   {
     "name": "Basmati Rice 5kg",
     "price": 450,
-    "image": "/uploads/img16.jpg",
+    "image": "/uploads/image.jpeg",
     "category": "groceries",
     "tag": "sale"
   },
   {
     "name": "Wheat Flour 5kg",
     "price": 320,
-    "image": "/uploads/img17.jpg",
+    "image": "/uploads/image.jpeg",
     "category": "groceries"
   },
   {
     "name": "Refined Sugar 2kg",
     "price": 150,
-    "image": "/uploads/img18.jpg",
+    "image": "/uploads/image.jpeg",
     "category": "groceries",
     "tag": "hot"
   },
   {
     "name": "Cooking Oil 1L",
     "price": 160,
-    "image": "/uploads/img19.jpg",
+    "image": "/uploads/image.jpeg",
     "category": "groceries",
     "tag": "new"
   },
   {
     "name": "Organic Green Tea 250g",
     "price": 220,
-    "image": "/uploads/img20.jpg",
+    "image": "/uploads/image.jpeg",
     "category": "groceries"
   },
   {
     "name": "Coffee Powder 500g",
     "price": 300,
-    "image": "/uploads/img21.jpg",
+    "image": "/uploads/image.jpeg",
     "category": "groceries",
     "tag": "hot"
   },
   {
     "name": "Fresh Milk 1L",
     "price": 60,
-    "image": "/uploads/img22.jpg",
+    "image": "/uploads/image.jpeg",
     "category": "groceries"
   },
   {
     "name": "Cheddar Cheese 200g",
     "price": 150,
-    "image": "/uploads/img23.jpg",
+    "image": "/uploads/image.jpeg",
     "category": "groceries"
   },
   {
     "name": "Brown Bread",
     "price": 40,
-    "image": "/uploads/img24.jpg",
+    "image": "/uploads/image.jpeg",
     "category": "groceries"
   },
   {
     "name": "Butter 500g",
     "price": 220,
-    "image": "/uploads/img25.jpg",
+    "image": "/uploads/image.jpeg",
     "category": "groceries"
   },
   {
     "name": "Eggs Pack of 12",
     "price": 70,
-    "image": "/uploads/img26.jpg",
+    "image": "/uploads/image.jpeg",
     "category": "groceries",
     "tag": "new"
   },
   {
     "name": "Tomato Ketchup 1L",
     "price": 120,
-    "image": "/uploads/img27.jpg",
+    "image": "/uploads/image.jpeg",
     "category": "groceries"
   },
   {
     "name": "Chili Powder 500g",
     "price": 180,
-    "image": "/uploads/img28.jpg",
+    "image": "/uploads/image.jpeg",
     "category": "groceries"
   },
   {
     "name": "Turmeric Powder 500g",
     "price": 160,
-    "image": "/uploads/img29.jpg",
+    "image": "/uploads/image.jpeg",
     "category": "groceries",
     "tag": "sale"
   },
   {
     "name": "Salt 1kg",
     "price": 20,
-    "image": "/uploads/img30.jpg",
+    "image": "/uploads/image.jpeg",
     "category": "groceries"
   },
   {
     "name": "Detergent Powder 2kg",
     "price": 180,
-    "image": "/uploads/img31.jpg",
+    "image": "/uploads/image.jpeg",
     "category": "groceries"
   },
   {
     "name": "Dishwashing Liquid 500ml",
     "price": 60,
-    "image": "/uploads/img32.jpg",
+    "image": "/uploads/image.jpeg",
     "category": "groceries"
   },
   {
     "name": "Mineral Water 1L",
     "price": 25,
-    "image": "/uploads/img33.jpg",
+    "image": "/uploads/image.jpeg",
     "category": "groceries"
   },
   {
     "name": "Apple 1kg",
     "price": 150,
-    "image": "/uploads/img34.jpg",
+    "image": "/uploads/image.jpeg",
     "category": "groceries",
     "tag": "hot"
   },
   {
     "name": "Banana 1 Dozen",
     "price": 60,
-    "image": "/uploads/img35.jpg",
+    "image": "/uploads/image.jpeg",
     "category": "groceries"
   },
   {
     "name": "Potato 1kg",
     "price": 40,
-    "image": "/uploads/img36.jpg",
+    "image": "/uploads/image.jpeg",
     "category": "groceries"
   },
   {
     "name": "Onion 1kg",
     "price": 50,
-    "image": "/uploads/img37.jpg",
+    "image": "/uploads/image.jpeg",
     "category": "groceries"
   },
   {
     "name": "Tomato 1kg",
     "price": 55,
-    "image": "/uploads/img38.jpg",
+    "image": "/uploads/image.jpeg",
     "category": "groceries"
   },
   {
     "name": "Fresh Coriander Bunch",
     "price": 20,
-    "image": "/uploads/img39.jpg",
+    "image": "/uploads/image.jpeg",
     "category": "groceries"
   }
 ]
