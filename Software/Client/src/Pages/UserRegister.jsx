@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-// import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-// import { showSuccessToast, showErrorToast } from '../utils/toastConfig';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -89,7 +87,7 @@ const Register = () => {
       <div className="bg-[#FFF8E8] shadow-lg rounded-xl p-8 w-full max-w-md border border-[#BB6653]">
         {/* Title */}
         <h2 className="text-3xl font-bold text-center text-[#BB6653] mb-6">
-          Register to Tap2Cart
+          Register to Get a Cart
         </h2>
 
         <form
@@ -151,7 +149,7 @@ const Register = () => {
             type="submit"
             disabled={loading}
             className="w-full bg-[#BB6653] text-white py-2 rounded-lg font-semibold hover:bg-[#F08B51] transition duration-300 disabled:opacity-50">
-            {loading ? 'Registering...' : 'Register'}
+            {loading ? 'Registering...' : 'Get a Cart'}
           </button>
         </form>
       </div>

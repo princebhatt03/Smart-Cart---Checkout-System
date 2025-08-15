@@ -10,8 +10,7 @@ const PaymentSuccessModal = ({ isOpen, onClose }) => {
           🎉 Payment Successful!
         </h2>
         <p className="text-gray-700 mb-6">
-          Thank you for shopping with us. Your order has been placed
-          successfully.
+          Thank you for shopping, Cart is ready for you.
         </p>
         <button
           onClick={onClose}
